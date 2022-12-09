@@ -5,9 +5,8 @@ import Footer from "../Footer/Footer";
 import "./ProductsList.scss";
 
 const ProductsList = () => {
-  let products = ProductsData;
   let initialBudget = 50;
-
+  const [products, setProducts] = useState(ProductsData);
   const [total, setTotal] = useState(0);
   const [balance, setBalance] = useState(initialBudget);
 
@@ -24,6 +23,7 @@ const ProductsList = () => {
             <Product
               product={product}
               products={products}
+              setProducts={setProducts}
               total={total}
               setTotal={setTotal}
             />
