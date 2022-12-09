@@ -1,0 +1,17 @@
+.footer-container {
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  bottom: 0;
+  background-color: rgba(139, 0, 0, 0.952);
+}
+
+.footer-info {
+  color: white;
+  margin: 6px 20px;
+}
+
+.footer-value {
+  font-weight: bold;
+}

@@ -1,0 +1,33 @@
+.product-title {
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+
+.product-category {
+  font-size: 10px;
+  margin: 0;
+}
+
+.product-price {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+.product-image {
+  margin: 5px 0;
+  height: 100px;
+}
+
+.product-quantity-button {
+  width: 30px;
+  padding: 4px;
+  margin: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgb(185, 0, 0);
+  border-radius: 10px;
+  border: 3px solid rgb(130, 0, 0);
+}
