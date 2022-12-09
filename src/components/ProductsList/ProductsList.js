@@ -18,7 +18,6 @@ const ProductsList = () => {
 
   return (
     <>
-      <Footer budget={initialBudget} total={total} balance={balance} />
       <div className="products-container">
         {products.map((product) => (
           <div className="product-wrapper" key={product.id}>
@@ -31,6 +30,8 @@ const ProductsList = () => {
           </div>
         ))}
       </div>
+      <div className="problem-solver-div"></div>
+      <Footer budget={initialBudget} total={total} balance={balance} />
     </>
   );
 };
