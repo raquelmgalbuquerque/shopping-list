@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+
+import ProductForm from "../ProductForm/ProductForm";
 import Product from "../Product/Product";
 import ProductsData from "../../data/ProductsData";
 import Footer from "../Footer/Footer";
@@ -17,6 +19,7 @@ const ProductsList = () => {
 
   return (
     <>
+      <ProductForm />
       <div className="products-container">
         {products.map((product) => (
           <div className="product-wrapper" key={product.id}>
