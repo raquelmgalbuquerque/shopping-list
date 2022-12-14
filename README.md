@@ -1,14 +1,14 @@
 # Shopping list
 
-This is a simple shopping list app built with React. Below you can see a snapshot of the app and check its main functionalities.
+This is a simple shopping list app built with React. Each product shows info concerning its category, price and rating. In the footer, you can consult your current budget ("orçamento"), total and the balance ("saldo"). Below you can see a snapshot of the app and check its main functionalities.
 
 ![Screenshot](./src/assets/app_snapshot.png)
 
 ## Functionalities available
 
-### Change item quantity
+### Change product quantity
 
-Increase or decrease the amount of products by clicking in the "+" and "-" buttons, respectively.
+Increase or decrease the amount of each product by clicking in the "+" and "-" buttons, respectively.
 
 ### Remove and edit products
 
@@ -16,7 +16,7 @@ You can also remove a product from the list by clicking in the trash bin button 
 
 ### Add your own products
 
-If you wish, add your products by filling up the form (right below the header). Once you submit the form, your product should be listed by the end of the page.
+If you wish, add your products by filling up the form (right below the header). Once you submit the form, your product should be listed at the end of the page.
 
 ## Getting Started with Create React App
 
