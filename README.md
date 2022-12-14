@@ -2,7 +2,7 @@
 
 This is a simple shopping list app built with React. Below you can see a snapshot of the app and check its main functionalities.
 
-![Screenshot](src\assets\app_snapshot.png)
+![Screenshot](./src/assets/app_snapshot.png)
 
 ## Functionalities available
 
