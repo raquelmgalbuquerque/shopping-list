@@ -1,12 +1,12 @@
 import NavBar from "../NavBar/NavBar";
-import ProductsList from "../ProductsList/ProductsList";
+import ProductList from "../ProductList/ProductList";
 import "./App.scss";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <ProductsList />
+      <ProductList />
     </div>
   );
 }

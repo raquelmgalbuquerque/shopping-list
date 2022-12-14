@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 
 import ProductForm from "../ProductForm/ProductForm";
 import Product from "../Product/Product";
-import ProductsData from "../../data/ProductsData";
+import ProductData from "../../data/ProductData";
 import Footer from "../Footer/Footer";
-import "./ProductsList.scss";
+import "./ProductList.scss";
 
-const ProductsList = () => {
+const ProductList = () => {
   let initialBudget = 50;
-  const [products, setProducts] = useState(ProductsData);
+  const [products, setProducts] = useState(ProductData);
   const [total, setTotal] = useState(0);
   const [balance, setBalance] = useState(initialBudget);
 
@@ -19,7 +19,7 @@ const ProductsList = () => {
 
   return (
     <>
-      <ProductForm />
+      <ProductForm products={products} setProducts={setProducts} />
       <div className="products-container">
         {products.map((product) => (
           <div className="product-wrapper" key={product.id}>
@@ -39,4 +39,4 @@ const ProductsList = () => {
   );
 };
 
-export default ProductsList;
+export default ProductList;

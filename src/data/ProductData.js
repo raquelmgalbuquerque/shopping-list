@@ -1,4 +1,4 @@
-const ProductsList = [
+const ProductData = [
   {
     id: 0,
     title: "Arroz Carolino",
@@ -82,7 +82,7 @@ const ProductsList = [
   },
   {
     id: 9,
-    title: "Banana da Madeira",
+    title: "Banana Madeira",
     category: "Frutas e Legumes",
     price: 2.3,
     rating: "⭐⭐⭐⭐⭐",
@@ -127,4 +127,4 @@ const ProductsList = [
   },
 ];
 
-export default ProductsList;
+export default ProductData;

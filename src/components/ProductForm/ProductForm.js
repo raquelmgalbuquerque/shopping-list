@@ -1,8 +1,10 @@
 import { Formik, Field, Form, ErrorMessage } from "formik";
+
+import noImage from "../../assets/no-image.png";
 import useFormValidation from "../../hooks/useFormValidation";
 import "./ProductForm.scss";
 
-const ProductFom = () => {
+const ProductForm = ({ products, setProducts }) => {
   const { validation } = useFormValidation();
 
   return (
@@ -13,14 +15,16 @@ const ProductFom = () => {
           category: "",
           price: "",
           rating: "",
-          imageURL: "",
+          imageURL: noImage,
         }}
         validate={(values) => validation(values)}
-        onSubmit={(values, { setSubmitting }) => {
-          setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
-            setSubmitting(false);
-          }, 400);
+        onSubmit={(values, { setSubmitting, resetForm }) => {
+          let newProduct = values;
+          newProduct["id"] = products.length;
+          newProduct["price"] = parseFloat(values.price);
+
+          setProducts((prevState) => [...prevState, newProduct]);
+          resetForm({ values: "" });
         }}
       >
         {({ isSubmitting }) => (
@@ -94,11 +98,11 @@ const ProductFom = () => {
                     className="field form-select"
                   >
                     <option value="">(Seleccione)</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
+                    <option value="⭐">⭐</option>
+                    <option value="⭐⭐">⭐⭐</option>
+                    <option value="⭐⭐⭐">⭐⭐⭐</option>
+                    <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+                    <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
                   </Field>
                   <ErrorMessage
                     className="error-message"
@@ -123,4 +127,4 @@ const ProductFom = () => {
   );
 };
 
-export default ProductFom;
+export default ProductForm;

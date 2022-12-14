@@ -35,4 +35,9 @@
   border-radius: 10px;
   border: 3px solid rgb(130, 0, 0);
   cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+.product-quantity-button:hover {
+  background-color: rgb(210, 1, 1);
 }
