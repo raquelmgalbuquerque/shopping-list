@@ -1,17 +1,15 @@
-@import "../../assets/variables.scss";
-
 .product-option-button {
   margin: 0 2px 10px 2px;
   width: 30px;
   height: 30px;
   line-height: 10px;
-  border: 3px solid $color-primary;
+  border: 3px solid darkred;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.1s ease-in;
 }
 
 .option-icon {
-  color: $color-primary;
-  background-color: $color-text-primary;
+  color: darkred;
+  background-color: antiquewhite;
 }
