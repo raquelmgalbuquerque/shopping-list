@@ -1,3 +1,5 @@
+@import "../../assets/variables.scss";
+
 input,
 select {
   -webkit-box-sizing: border-box;
@@ -12,45 +14,60 @@ label {
 }
 
 .add-product-container {
-  background-color: rgba(139, 0, 0, 0.394);
+  background-color: $color-quinary;
   width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-field-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 992px) {
+    width: 250px;
+    flex-direction: column;
+  }
 }
 
 .form-field-wrapper {
   text-align: right;
   margin: 10px 10px;
+  @media (max-width: 992px) {
+    margin: 0;
+    text-align: left;
+  }
 }
 
 .form-field {
   margin: 5px 0;
+  @media (max-width: 992px) {
+    width: 200px;
+    margin: 2px 0;
+  }
 }
 
 .add-product-button {
   font-family: "Poppins", sans-serif;
   padding: 5px;
   margin: 10px;
-  color: white;
+  color: $color-text-primary;
   font-size: 14px;
   font-weight: bold;
-  background-color: rgb(185, 0, 0);
+  background-color: $color-secondary;
   border-radius: 10px;
-  border: 3px solid rgb(130, 0, 0);
+  border: 3px solid $color-tertiary;
   cursor: pointer;
   transition: all 0.1s ease-in;
 }
 
 .add-product-button:hover {
-  background-color: rgb(210, 1, 1);
+  background-color: $color-quaternary;
 }
 
 .error-message {
-  color: darkred;
+  color: $color-primary;
   font-size: 12px;
   font-weight: bold;
 }

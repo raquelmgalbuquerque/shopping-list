@@ -1,7 +1,9 @@
+@import "../../assets/variables.scss";
+
 .navbar-container {
   height: 70px;
   width: 100vw;
-  background-color: darkred;
+  background-color: $color-primary;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,5 +11,5 @@
 
 .navbar-header {
   margin: 0;
-  color: white;
+  color: $color-text-primary;
 }

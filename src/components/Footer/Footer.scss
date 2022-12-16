@@ -1,16 +1,21 @@
+@import "../../assets/variables.scss";
+
 .footer-container {
   width: 100vw;
   display: flex;
   position: fixed;
   justify-content: center;
   bottom: 0;
-  background-color: rgba(139, 0, 0, 0.952);
+  background-color: $color-senary;
 }
 
 .footer-info {
   font-size: 20px;
-  color: white;
+  color: $color-text-primary;
   margin: 6px 20px;
+  @media (max-width: 992px) {
+    width: 110px;
+  }
 }
 
 .footer-value {
